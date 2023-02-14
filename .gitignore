@@ -1,4 +1,2 @@
 .venv/
-dist
 .idea
-__pycache__
