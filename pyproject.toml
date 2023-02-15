@@ -1,9 +1,14 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Package included 5 console mini games. Each game is given 3 attempts.
+		 If you answer correctly 3 times, you win"
 authors = ["Georgievsky <jespy.kz@gmail.com>"]
 readme = "README.md"
+repository = "https://github.com/jespy666/python-project-49.git"
+classifiers = [
+    "Topic :: Games/Entertainment"
+]
 packages = [
   { include = "brain_games" },
 ]
