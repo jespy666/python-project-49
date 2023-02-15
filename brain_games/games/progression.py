@@ -1,7 +1,7 @@
 from random import randint
 
 
-exercise = 'What number is missing in the progression?'
+EXERCISE = 'What number is missing in the progression?'
 
 
 def start_game():
