@@ -17,27 +17,27 @@
 # Games:
 
 ### Brain Even:
-> You need to answer "yes" if the number is even, otherwise you need to answer "no"
-> To Run game make:  **brain-even**
+> You need to answer "yes" if the number is even, otherwise you need to answer "no".
+* To Run game make:  **brain-even**
 [![asciicast](https://asciinema.org/a/559421.svg)](https://asciinema.org/a/559421)
 
 ### Brain Calc:
-> You need to find the result of the expression
-> To Run game make:  **brain-calc**
+> You need to find the result of the expression.
+* To Run game make:  **brain-calc**
 [![asciicast](https://asciinema.org/a/559499.svg)](https://asciinema.org/a/559499)
 
 ### Brain GCD:
-> You need to find the greatest common divisor of given numbers
-> To Run game make:  **brain-gcd**
+> You need to find the greatest common divisor of given numbers.
+* To Run game make:  **brain-gcd**
 [![asciicast](https://asciinema.org/a/559669.svg)](https://asciinema.org/a/559669)
 
 ### Brain Progression:
-> You need to find the missing number of the progression
-> To Run game make:  **brain-progression**
+> You need to find the missing number of the progression.
+* To Run game make:  **brain-progression**
 [![asciicast](https://asciinema.org/a/559693.svg)](https://asciinema.org/a/559693)
 
 ### Brain Prime:
-> You need to answer "yes" if given number is prime, otherwise you need to answer "no"
-> To Run game make:  **brain-prime**
+> You need to answer "yes" if given number is prime, otherwise you need to answer "no".
+* To Run game make:  **brain-prime**
 [![asciicast](https://asciinema.org/a/559709.svg)](https://asciinema.org/a/559709)
 
