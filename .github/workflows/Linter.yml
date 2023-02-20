@@ -2,7 +2,7 @@ name: Lint
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
     paths:
       - '*.py'
 
@@ -24,4 +24,4 @@ jobs:
         with:
           checkName: 'flake8_py3'   # NOTE: this needs to be the same as the job name
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.LINTER_FLAKE }}
