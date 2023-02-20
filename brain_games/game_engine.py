@@ -5,7 +5,7 @@ import prompt
 def run_game(name_of_game):
     print('Welcome to the Brain Games!')
     player_name = welcome_user()
-    print(name_of_game.EXERCISE)
+    print(name_of_game.TASK)
     for i in range(3):
         question, answer = name_of_game.start_game()
         print(f"Question: {question}")

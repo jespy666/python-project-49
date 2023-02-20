@@ -1,7 +1,7 @@
 from random import randint, choice
 
 
-EXERCISE = 'What is the result of the expression?'
+TASK = 'What is the result of the expression?'
 
 
 def start_game():

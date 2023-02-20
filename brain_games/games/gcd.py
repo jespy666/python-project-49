@@ -2,7 +2,7 @@ from random import randint
 import math
 
 
-EXERCISE = 'Find the greatest common divisor of given numbers.'
+TASK = 'Find the greatest common divisor of given numbers.'
 
 
 def start_game():
