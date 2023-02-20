@@ -2,12 +2,12 @@ from brain_games.cli import welcome_user
 import prompt
 
 
-def run_game(name_of_game):
+def run_game(game):
     print('Welcome to the Brain Games!')
     player_name = welcome_user()
-    print(name_of_game.TASK)
+    print(game.TASK)
     for i in range(3):
-        question, answer = name_of_game.start_game()
+        question, answer = game.start_game()
         print(f"Question: {question}")
         user_answer = prompt.string('Your answer: ')
         if user_answer == answer:
