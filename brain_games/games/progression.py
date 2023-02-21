@@ -2,30 +2,29 @@ from random import randint
 
 
 TASK = 'What number is missing in the progression?'
+LOWER_START_LIMIT = 1
+UPPER_START_LIMIT = 10
+MIN_MISSING_MEMBER = 0
+MAX_MISSING_MEMBER = 9
+MIN_COMMON_DIFFERENCE = 2
+MAX_COMMON_DIFFERENCE = 5
+PROGRESSION_LENGTH = 10
 
 
-def start_game():
-    question, answer = choice_symbol()
+def get_progression():
+    common_difference = randint(MIN_COMMON_DIFFERENCE, MAX_COMMON_DIFFERENCE)
+    i = randint(LOWER_START_LIMIT, UPPER_START_LIMIT)
+    progression = []
+    while len(progression) < PROGRESSION_LENGTH:
+        progression.append(i)
+        i += common_difference
+    return progression
+
+
+def get_game_data():
+    progression = get_progression()
+    missing_member = randint(MIN_MISSING_MEMBER, MAX_MISSING_MEMBER)
+    answer = progression[missing_member]
+    progression[progression.index(answer)] = '..'
+    question = ' '.join(map(str, progression))
     return question, str(answer)
-
-
-def generate_subsequence():
-    i = randint(1, 10)
-    step = randint(2, 5)
-    subsequence = []
-    while len(subsequence) <= 10:
-        subsequence.append(i)
-        i += step
-    return subsequence
-
-
-def choice_symbol():
-    sequence = generate_subsequence()
-    hidden_symbol = randint(0, 9)
-    answer = sequence[hidden_symbol]
-    sequence[hidden_symbol] = '..'
-    result = ''
-    for j in sequence:
-        result += str(j)
-        result += ' '
-    return result[:-1], answer
