@@ -1,6 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/jespy666/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/jespy666/python-project-49/actions)
-[![Linter Status](https://github.com/jespy666/python-project-49/workflows/Lint/badge.svg)](https://github.com/jespy666/python-project-49/actions)
+[![Linter Status](https://github.com/jespy666/python-project-49/actions/workflows/Linter.yml/badge.svg)](https://github.com/jespy666/python-project-49/actions/workflows/Linter.yml)
 [![Maintainability](https://api.codeclimate.com/v1/badges/dacd2d1aee6ed66ab21e/maintainability)](https://codeclimate.com/github/jespy666/python-project-49/maintainability)
 
 # Welcome to the Brain Games!
