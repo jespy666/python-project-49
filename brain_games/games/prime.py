@@ -2,20 +2,19 @@ from random import randint
 
 
 TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-LOWER_LIMIT = 1
-UPPER_LIMIT = 10
+LOWER_LIMIT = 2
+UPPER_LIMIT = 100
 
 
 def is_prime(number):
-    counter = 0
-    i = 1
-    while i <= number:
+    if number == 0 or number == 1:
+        return False
+    i = 2
+    while i < number:
         if number % i == 0:
-            counter += 1
+            return False
         i += 1
-    if counter == 2:
-        return True
-    return False
+    return True
 
 
 def get_game_data():
@@ -25,3 +24,4 @@ def get_game_data():
     else:
         answer = 'no'
     return question, answer
+

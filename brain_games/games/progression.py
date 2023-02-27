@@ -11,20 +11,28 @@ MAX_COMMON_DIFFERENCE = 5
 PROGRESSION_LENGTH = 10
 
 
-def get_progression():
-    common_difference = randint(MIN_COMMON_DIFFERENCE, MAX_COMMON_DIFFERENCE)
-    i = randint(LOWER_START_LIMIT, UPPER_START_LIMIT)
+def get_progression(progression_length, first_member, common_difference):
     progression = []
-    while len(progression) < PROGRESSION_LENGTH:
+    i = first_member
+    while len(progression) <= progression_length:
         progression.append(i)
         i += common_difference
     return progression
 
 
+def get_question(progression):
+    question = ''
+    for j in progression:
+        question += str(j) + ' '
+    return question[:-1]
+
+
 def get_game_data():
-    progression = get_progression()
+    first_member = randint(LOWER_START_LIMIT, UPPER_START_LIMIT)
+    common_difference = randint(MIN_COMMON_DIFFERENCE, MAX_COMMON_DIFFERENCE)
+    progression = get_progression(PROGRESSION_LENGTH, first_member, common_difference)
     missing_member = randint(MIN_MISSING_MEMBER, MAX_MISSING_MEMBER)
     answer = progression[missing_member]
-    progression[progression.index(answer)] = '..'
-    question = ' '.join(map(str, progression))
+    progression[missing_member] = '..'
+    question = get_question(progression)
     return question, str(answer)
