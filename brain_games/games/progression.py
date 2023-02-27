@@ -30,7 +30,9 @@ def get_question(progression):
 def get_game_data():
     first_member = randint(LOWER_START_LIMIT, UPPER_START_LIMIT)
     common_difference = randint(MIN_COMMON_DIFFERENCE, MAX_COMMON_DIFFERENCE)
-    progression = get_progression(PROGRESSION_LENGTH, first_member, common_difference)
+    progression = get_progression(PROGRESSION_LENGTH,
+                                  first_member,
+                                  common_difference)
     missing_member = randint(MIN_MISSING_MEMBER, MAX_MISSING_MEMBER)
     answer = progression[missing_member]
     progression[missing_member] = '..'
