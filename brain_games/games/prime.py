@@ -7,7 +7,7 @@ UPPER_LIMIT = 100
 
 
 def is_prime(number):
-    if number == 0 or number == 1:
+    if number <= 1:
         return False
     i = 2
     while i < number:
